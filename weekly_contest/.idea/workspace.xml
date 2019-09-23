@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf81434-a90e-4468-96d8-4fb82fa9f2f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dd/biweekly_contest_9/find_smallest_common_element_in_all_rows/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dd/biweekly_contest_9/how_many_apples_can_you_put_into_the_basket/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dd/weekly_contest155/minimum_absolute_difference/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dd/weekly_contest155/ugly_number_iii/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../201909_leetcode/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../201909_leetcode/src/longest_palindromic_substring/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../201909_leetcode/src/longest_substring_without_repeating_characters/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dd/weekly_contest155/minimum_absolute_difference/dailaosSolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../201909_leetcode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../201909_leetcode/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +39,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="G:/Nwt/files/宋宪芹/da04_spring(3)" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -152,7 +152,9 @@
       <workItem from="1567910395614" duration="4575000" />
       <workItem from="1568514970232" duration="6689000" />
       <workItem from="1569077037750" duration="4426000" />
-      <workItem from="1569119807053" duration="7418000" />
+      <workItem from="1569119807053" duration="8703000" />
+      <workItem from="1569238423890" duration="262000" />
+      <workItem from="1569238736903" duration="1799000" />
     </task>
     <servers />
   </component>

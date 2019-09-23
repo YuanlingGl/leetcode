@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="825359cc-a467-4446-8296-63a6eaa88bb9" name="Default Changelist" comment="" />
+    <list default="true" id="825359cc-a467-4446-8296-63a6eaa88bb9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/longest_palindromic_substring/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/longest_substring_without_repeating_characters/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weekly_contest/src/com/dd/weekly_contest155/minimum_absolute_difference/dailaosSolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly_contest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly_contest/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,14 +25,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1QpFzsm62Frqau6x7ZZzcGITFl7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="E:/IdeaProjects/leetcode/weekly_contest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,13 +63,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.demo">
+  <component name="RunManager" selected="Application.demo (1)">
     <configuration name="a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Fizz_Buzz.a" />
       <module name="20190914_leetcode" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Fizz_Buzz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="longest_palindromic_substring.demo" />
+      <module name="20190914_leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="longest_palindromic_substring.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,6 +105,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.demo (1)" />
         <item itemvalue="Application.demo" />
         <item itemvalue="Application.a" />
       </list>
@@ -94,10 +122,22 @@
       <option name="presentableId" value="Default" />
       <updated>1568459895121</updated>
       <workItem from="1568459897981" duration="16575000" />
+      <workItem from="1569235708320" duration="2946000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
