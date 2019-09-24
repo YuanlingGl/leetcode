@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="825359cc-a467-4446-8296-63a6eaa88bb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/longest_palindromic_substring/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/longest_substring_without_repeating_characters/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../weekly_contest/src/com/dd/weekly_contest155/minimum_absolute_difference/dailaosSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/letter_combinations_of_a_phone_number/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../weekly_contest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly_contest/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -123,6 +119,7 @@
       <updated>1568459895121</updated>
       <workItem from="1568459897981" duration="16575000" />
       <workItem from="1569235708320" duration="2946000" />
+      <workItem from="1569324906301" duration="453000" />
     </task>
     <servers />
   </component>
@@ -134,7 +131,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

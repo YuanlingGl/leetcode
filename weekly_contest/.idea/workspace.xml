@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf81434-a90e-4468-96d8-4fb82fa9f2f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../201909_leetcode/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../201909_leetcode/src/longest_palindromic_substring/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../201909_leetcode/src/longest_substring_without_repeating_characters/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dd/weekly_contest155/minimum_absolute_difference/dailaosSolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../201909_leetcode/src/letter_combinations_of_a_phone_number/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../201909_leetcode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../201909_leetcode/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -154,7 +151,7 @@
       <workItem from="1569077037750" duration="4426000" />
       <workItem from="1569119807053" duration="8703000" />
       <workItem from="1569238423890" duration="262000" />
-      <workItem from="1569238736903" duration="1799000" />
+      <workItem from="1569238736903" duration="2398000" />
     </task>
     <servers />
   </component>
