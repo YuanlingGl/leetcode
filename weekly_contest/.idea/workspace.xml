@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf81434-a90e-4468-96d8-4fb82fa9f2f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../201909_leetcode/src/letter_combinations_of_a_phone_number/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dd/fall_2019/deep_dark_fraction/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dd/fall_2019/guess_numbers/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dd/fall_2019/programmable_robot/demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../201909_leetcode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../201909_leetcode/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -43,6 +45,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -56,13 +59,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.and_demo">
-    <configuration name="and_demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dd.demo.and_demo" />
+  <component name="RunManager" selected="Application.Demo">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dd.fall_2019.deep_dark_fraction.Demo" />
       <module name="weekly_contest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dd.demo.*" />
+          <option name="PATTERN" value="com.dd.fall_2019.deep_dark_fraction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="demo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dd.weekly_contest154.reverse_substrings_between_each_pair_of_parentheses.demo" />
+    <configuration name="and_demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dd.demo.and_demo" />
       <module name="weekly_contest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dd.weekly_contest154.reverse_substrings_between_each_pair_of_parentheses.*" />
+          <option name="PATTERN" value="com.dd.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Demo" />
         <item itemvalue="Application.and_demo" />
         <item itemvalue="Application.demo (4)" />
         <item itemvalue="Application.demo (3)" />
         <item itemvalue="Application.demo (2)" />
-        <item itemvalue="Application.demo (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +154,7 @@
       <workItem from="1569077037750" duration="4426000" />
       <workItem from="1569119807053" duration="8703000" />
       <workItem from="1569238423890" duration="262000" />
-      <workItem from="1569238736903" duration="2398000" />
+      <workItem from="1569238736903" duration="6516000" />
     </task>
     <servers />
   </component>

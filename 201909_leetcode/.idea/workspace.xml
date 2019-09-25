@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="825359cc-a467-4446-8296-63a6eaa88bb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/letter_combinations_of_a_phone_number/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/increasing_triplet_subsequence/demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weekly_contest/src/com/dd/fall_2019/deep_dark_fraction/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weekly_contest/src/com/dd/fall_2019/guess_numbers/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weekly_contest/src/com/dd/fall_2019/programmable_robot/demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../weekly_contest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly_contest/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,7 +63,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.demo (1)">
+  <component name="RunManager" selected="Application.demo (2)">
     <configuration name="a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Fizz_Buzz.a" />
       <module name="20190914_leetcode" />
@@ -86,6 +90,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="demo (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="increasing_triplet_subsequence.demo" />
+      <module name="20190914_leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="increasing_triplet_subsequence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="zimifenzu.demo" />
       <module name="20190914_leetcode" />
@@ -101,6 +118,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.demo (2)" />
         <item itemvalue="Application.demo (1)" />
         <item itemvalue="Application.demo" />
         <item itemvalue="Application.a" />
@@ -119,8 +137,16 @@
       <updated>1568459895121</updated>
       <workItem from="1568459897981" duration="16575000" />
       <workItem from="1569235708320" duration="2946000" />
-      <workItem from="1569324906301" duration="453000" />
+      <workItem from="1569324906301" duration="3747000" />
     </task>
+    <task id="LOCAL-00001" summary="20190924">
+      <created>1569325418063</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569325418063</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,5 +164,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="20190924" />
+    <option name="LAST_COMMIT_MESSAGE" value="20190924" />
   </component>
 </project>
