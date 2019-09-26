@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="825359cc-a467-4446-8296-63a6eaa88bb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/increasing_triplet_subsequence/demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../weekly_contest/src/com/dd/fall_2019/deep_dark_fraction/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../weekly_contest/src/com/dd/fall_2019/guess_numbers/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../weekly_contest/src/com/dd/fall_2019/programmable_robot/demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/add_two_numbers/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../weekly_contest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly_contest/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +35,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/IdeaProjects/leetcode/mybatis_01" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -137,7 +133,7 @@
       <updated>1568459895121</updated>
       <workItem from="1568459897981" duration="16575000" />
       <workItem from="1569235708320" duration="2946000" />
-      <workItem from="1569324906301" duration="3747000" />
+      <workItem from="1569324906301" duration="7243000" />
     </task>
     <task id="LOCAL-00001" summary="20190924">
       <created>1569325418063</created>
