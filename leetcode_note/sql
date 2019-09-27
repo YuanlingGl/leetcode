@@ -66,3 +66,34 @@ mysql> SELECT * FROM orange LIMIT 10,15;  // 检索记录11-25
 mysql> SELECT * FROM orange LIMIT 2 OFFSET 3;//查询4-5两条记录
 等价于
 mysql> SELECT * FROM orange  LIMIT 3,2;
+--------------------
+编写一个 SQL 查询，获取 Employee 表中第 n 高的薪水（Salary）。
+
++----+--------+
+| Id | Salary |
++----+--------+
+| 1  | 100    |
+| 2  | 200    |
+| 3  | 300    |
++----+--------+
+
+例如上述 Employee 表，n = 2 时，应返回第二高的薪水 200。如果不存在第 n 高的薪水，那么查询应返回 null。
+
++------------------------+
+| getNthHighestSalary(2) |
++------------------------+
+| 200                    |
++------------------------+
+
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+  DECLARE P INT;
+  SET P = N-1;
+  RETURN (
+      select(
+        SELECT DISTINCT Salary FROM Employee ORDER BY Salary DESC LIMIT P,1
+      )
+  );
+END
+
+跟昨天差不多
