@@ -696,3 +696,347 @@ WHERE
 ;
 
 //left join
+
+--------------------
+给定表 customer ，里面保存了所有客户信息和他们的推荐人。
+
++------+------+-----------+
+| id   | name | referee_id|
++------+------+-----------+
+|    1 | Will |      NULL |
+|    2 | Jane |      NULL |
+|    3 | Alex |         2 |
+|    4 | Bill |      NULL |
+|    5 | Zack |         1 |
+|    6 | Mark |         2 |
++------+------+-----------+
+
+写一个查询语句，返回一个编号列表，列表中编号的推荐人的编号都 不是 2。
+
+对于上面的示例数据，结果为：
+
++------+
+| name |
++------+
+| Will |
+| Jane |
+| Bill |
+| Zack |
++------+
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/find-customer-referee
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+select name from customer where referee_id <> 2 or referee_id is null
+
+-记得处理空数据
+
+这里有张 World 表
+
++-----------------+------------+------------+--------------+---------------+
+| name            | continent  | area       | population   | gdp           |
++-----------------+------------+------------+--------------+---------------+
+| Afghanistan     | Asia       | 652230     | 25500100     | 20343000      |
+| Albania         | Europe     | 28748      | 2831741      | 12960000      |
+| Algeria         | Africa     | 2381741    | 37100000     | 188681000     |
+| Andorra         | Europe     | 468        | 78115        | 3712000       |
+| Angola          | Africa     | 1246700    | 20609294     | 100990000     |
++-----------------+------------+------------+--------------+---------------+
+
+如果一个国家的面积超过300万平方公里，或者人口超过2500万，那么这个国家就是大国家。
+
+编写一个SQL查询，输出表中所有大国家的名称、人口和面积。
+
+例如，根据上表，我们应该输出:
+
++--------------+-------------+--------------+
+| name         | population  | area         |
++--------------+-------------+--------------+
+| Afghanistan  | 25500100    | 652230       |
+| Algeria      | 37100000    | 2381741      |
++--------------+-------------+--------------+
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/big-countries
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+select name,population,area from world where area > 3000000 or population > 25000000
+
+-没劲
+
+有一个courses 表 ，有: student (学生) 和 class (课程)。
+
+请列出所有超过或等于5名学生的课。
+
+例如,表:
+
++---------+------------+
+| student | class      |
++---------+------------+
+| A       | Math       |
+| B       | English    |
+| C       | Math       |
+| D       | Biology    |
+| E       | Math       |
+| F       | Computer   |
+| G       | Math       |
+| H       | Math       |
+| I       | Math       |
++---------+------------+
+
+应该输出:
+
++---------+
+| class   |
++---------+
+| Math    |
++---------+
+
+Note:
+学生在每个课中不应被重复计算。
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/classes-more-than-5-students
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+select class from courses group by class having count(distinct student)>=5 ;
+
+-去重
+
+在 Facebook 或者 Twitter 这样的社交应用中，人们经常会发好友申请也会收到其他人的好友申请。现在给如下两个表：
+
+ 
+
+表： friend_request
+
+| sender_id | send_to_id |request_date|
+|-----------|------------|------------|
+| 1         | 2          | 2016_06-01 |
+| 1         | 3          | 2016_06-01 |
+| 1         | 4          | 2016_06-01 |
+| 2         | 3          | 2016_06-02 |
+| 3         | 4          | 2016-06-09 |
+
+ 
+
+表： request_accepted
+
+| requester_id | accepter_id |accept_date |
+|--------------|-------------|------------|
+| 1            | 2           | 2016_06-03 |
+| 1            | 3           | 2016-06-08 |
+| 2            | 3           | 2016-06-08 |
+| 3            | 4           | 2016-06-09 |
+| 3            | 4           | 2016-06-10 |
+
+ 
+
+写一个查询语句，求出好友申请的通过率，用 2 位小数表示。通过率由接受好友申请的数目除以申请总数。
+
+ 
+
+对于上面的样例数据，你的查询语句应该返回如下结果。
+
+ 
+
+|accept_rate|
+|-----------|
+|       0.80|
+
+ 
+
+注意:
+
+    通过的好友申请不一定都在表 friend_request 中。在这种情况下，你只需要统计总的被通过的申请数（不管它们在不在原来的申请中），并将它除以申请总数，得到通过率
+    一个好友申请发送者有可能会给接受者发几条好友申请，也有可能一个好友申请会被通过好几次。这种情况下，重复的好友申请只统计一次。
+    如果一个好友申请都没有，通过率为 0.00 。
+
+ 
+
+解释： 总共有 5 个申请，其中 4 个是不重复且被通过的好友申请，所以成功率是 0.80 。
+
+ 
+
+进阶:
+
+    你能写一个查询语句得到每个月的通过率吗？
+    你能求出每一天的累计通过率吗？
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/friend-requests-i-overall-acceptance-rate
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+select
+round(
+    ifnull(
+    (select count(*) from (select distinct requester_id, accepter_id from request_accepted) as A)
+    /
+    (select count(*) from (select distinct sender_id, send_to_id from friend_request) as B),
+    0)
+, 2) as accept_rate;
+
+mysql中isnull,ifnull,nullif的用法如下：
+
+isnull(expr) 的用法：
+如expr 为null，那么isnull() 的返回值为 1，否则返回值为 0。
+mysql> select isnull(1+1);
+-> 0
+mysql> select isnull(1/0);
+-> 1
+使用= 的null 值对比通常是错误的。
+
+isnull() 函数同 is null比较操作符具有一些相同的特性。请参见有关is null 的说明。
+
+IFNULL(expr1,expr2)的用法：
+
+假如expr1   不为   NULL，则   IFNULL()   的返回值为   expr1;
+否则其返回值为   expr2。IFNULL()的返回值是数字或是字符串，具体情况取决于其所使用的语境。
+
+mysql>   SELECT   IFNULL(1,0);   
+                  ->   1   
+mysql>   SELECT   IFNULL(NULL,10);   
+   ->   10   
+ mysql>   SELECT   IFNULL(1/0,10);   
+           ->   10   
+mysql>   SELECT  
+IFNULL(1/0,'yes');   
+
+            ->   'yes'  
+
+IFNULL(expr1,expr2)的默认结果值为两个表达式中更加“通用”的一个，顺序为STRING、   REAL或  
+INTEGER。假设一个基于表达式的表的情况，     或MySQL必须在内存储器中储存一个临时表中IFNULL()的返回值：   
+CREATE   TABLE   tmp   SELECT   IFNULL(1,'test')   AS   test；  
+在这个例子中，测试列的类型为   CHAR(4)。     
+NULLIF(expr1,expr2)  的用法： 
+如果expr1
+=   expr2     成立，那么返回值为NULL，否则返回值为   expr1。这和CASE   WHEN   expr1   =   expr2  
+THEN   NULL   ELSE   expr1   END相同。    
+mysql>   SELECT  
+NULLIF(1,1);   
+
+           ->   NULL   
+mysql>   SELECT   NULLIF(1,2);   
+            ->   1  
+如果参数不相等，则   MySQL   两次求得的值为     expr1   。
+
+几个朋友来到电影院的售票处，准备预约连续空余座位。
+
+你能利用表 cinema ，帮他们写一个查询语句，获取所有空余座位，并将它们按照 seat_id 排序后返回吗？
+
+| seat_id | free |
+|---------|------|
+| 1       | 1    |
+| 2       | 0    |
+| 3       | 1    |
+| 4       | 1    |
+| 5       | 1    |
+
+ 
+
+对于如上样例，你的查询语句应该返回如下结果。
+
+ 
+
+| seat_id |
+|---------|
+| 3       |
+| 4       |
+| 5       |
+
+注意：
+
+    seat_id 字段是一个自增的整数，free 字段是布尔类型（'1' 表示空余， '0' 表示已被占据）。
+    连续空余座位的定义是大于等于 2 个连续空余的座位。
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/consecutive-available-seats
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+select distinct a.seat_id
+from cinema a join cinema b
+  on abs(a.seat_id - b.seat_id) = 1
+  and a.free = true and b.free = true
+order by a.seat_id
+;
+
+给定 3 个表： salesperson， company， orders。
+输出所有表 salesperson 中，没有向公司 'RED' 销售任何东西的销售员。
+
+解释
+输入
+
+表： salesperson
+
++----------+------+--------+-----------------+-----------+
+| sales_id | name | salary | commission_rate | hire_date |
++----------+------+--------+-----------------+-----------+
+|   1      | John | 100000 |     6           | 4/1/2006  |
+|   2      | Amy  | 120000 |     5           | 5/1/2010  |
+|   3      | Mark | 65000  |     12          | 12/25/2008|
+|   4      | Pam  | 25000  |     25          | 1/1/2005  |
+|   5      | Alex | 50000  |     10          | 2/3/2007  |
++----------+------+--------+-----------------+-----------+
+
+表 salesperson 存储了所有销售员的信息。每个销售员都有一个销售员编号 sales_id 和他的名字 name 。
+
+表： company
+
++---------+--------+------------+
+| com_id  |  name  |    city    |
++---------+--------+------------+
+|   1     |  RED   |   Boston   |
+|   2     | ORANGE |   New York |
+|   3     | YELLOW |   Boston   |
+|   4     | GREEN  |   Austin   |
++---------+--------+------------+
+
+表 company 存储了所有公司的信息。每个公司都有一个公司编号 com_id 和它的名字 name 。
+
+表： orders
+
++----------+------------+---------+----------+--------+
+| order_id | order_date | com_id  | sales_id | amount |
++----------+------------+---------+----------+--------+
+| 1        |   1/1/2014 |    3    |    4     | 100000 |
+| 2        |   2/1/2014 |    4    |    5     | 5000   |
+| 3        |   3/1/2014 |    1    |    1     | 50000  |
+| 4        |   4/1/2014 |    1    |    4     | 25000  |
++----------+----------+---------+----------+--------+
+
+表 orders 存储了所有的销售数据，包括销售员编号 sales_id 和公司编号 com_id 。
+
+输出
+
++------+
+| name | 
++------+
+| Amy  | 
+| Mark | 
+| Alex |
++------+
+
+解释
+
+根据表 orders 中的订单 '3' 和 '4' ，容易看出只有 'John' 和 'Pam' 两个销售员曾经向公司 'RED' 销售过。
+
+所以我们需要输出表 salesperson 中所有其他人的名字。
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/sales-person
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+SELECT
+    s.name
+FROM
+    salesperson s
+WHERE
+    s.sales_id NOT IN (SELECT
+            o.sales_id
+        FROM
+            orders o
+                LEFT JOIN
+            company c ON o.com_id = c.com_id
+        WHERE
+            c.name = 'RED')
+;

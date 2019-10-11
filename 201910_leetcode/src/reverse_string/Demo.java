@@ -16,7 +16,7 @@ class Solution{
         int left = -1;
         int right = s.length;
         while (++left < --right) {
-            char c = s[left];
+             char c = s[left];
             s[left] = s[right];
             s[right] = c;
         }
