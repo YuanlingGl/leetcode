@@ -1472,3 +1472,37 @@ mysql> SELECT ABS(-2);
 | 2                                                       |
 +---------------------------------------------------------+
 1 row in set (0.00 sec)
+--------------------
+项目表 Project： 
+
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| project_id  | int     |
+| employee_id | int     |
++-------------+---------+
+主键为 (project_id, employee_id)。
+employee_id 是员工表 Employee 表的外键。
+
+员工表 Employee：
+
++------------------+---------+
+| Column Name      | Type    |
++------------------+---------+
+| employee_id      | int     |
+| name             | varchar |
+| experience_years | int     |
++------------------+---------+
+主键是 employee_id。
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/project-employees-i
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+# Write your MySQL query statement below
+select project_id ,round(avg(experience_years),2) as average_years
+from Project
+left join Employee
+on Project.employee_id = Employee.employee_id
+group by project_id
+order by project_id;
