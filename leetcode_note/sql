@@ -3520,3 +3520,82 @@ FROM Employee AS a JOIN Employee AS b
 select Email from Person 
 group by Email
 having count(Email) > 1
+--------------------
+2019/11/22
+
+编写一个 SQL 查询，来删除 Person 表中所有重复的电子邮箱，重复的邮箱里只保留 Id 最小 的那个。
+
++----+------------------+
+| Id | Email            |
++----+------------------+
+| 1  | john@example.com |
+| 2  | bob@example.com  |
+| 3  | john@example.com |
++----+------------------+
+Id 是这个表的主键。
+
+例如，在运行你的查询语句之后，上面的 Person 表应返回以下几行:
+
++----+------------------+
+| Id | Email            |
++----+------------------+
+| 1  | john@example.com |
+| 2  | bob@example.com  |
++----+------------------+
+
+贡献者
+
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/delete-duplicate-emails
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+
+DELETE p1 FROM Person p1,
+    Person p2
+WHERE
+    p1.Email = p2.Email AND p1.Id > p2.Id
+--------------------
+2019/11/23
+在表 orders 中找到订单数最多客户对应的 customer_number 。
+
+数据保证订单数最多的顾客恰好只有一位。
+
+表 orders 定义如下：
+
+| Column            | Type      |
+|-------------------|-----------|
+| order_number (PK) | int       |
+| customer_number   | int       |
+| order_date        | date      |
+| required_date     | date      |
+| shipped_date      | date      |
+| status            | char(15)  |
+| comment           | char(200) |
+
+样例输入
+
+| order_number | customer_number | order_date | required_date | shipped_date | status | comment |
+|--------------|-----------------|------------|---------------|--------------|--------|---------|
+| 1            | 1               | 2017-04-09 | 2017-04-13    | 2017-04-12   | Closed |         |
+| 2            | 2               | 2017-04-15 | 2017-04-20    | 2017-04-18   | Closed |         |
+| 3            | 3               | 2017-04-16 | 2017-04-25    | 2017-04-20   | Closed |         |
+| 4            | 3               | 2017-04-18 | 2017-04-28    | 2017-04-25   | Closed |         |
+
+样例输出
+
+| customer_number |
+|-----------------|
+| 3               |
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/customer-placing-the-largest-number-of-orders
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+SELECT
+    customer_number
+FROM
+    orders
+GROUP BY customer_number
+ORDER BY COUNT(*) DESC
+LIMIT 1
