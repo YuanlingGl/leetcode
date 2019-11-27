@@ -3708,6 +3708,8 @@ Table: Activity
 | user_id       | int     |
 | session_id    | int     |
 | activity_date | date    |
+
+
 | activity_type | enum    |
 +---------------+---------+
 该表没有主键，它可能有重复的行。
