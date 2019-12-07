@@ -4112,3 +4112,59 @@ select distinct viewer_id as id
 from Views 
 where viewer_id = author_id
 order by viewer_id
+
+--------------------
+2019/12/7
+书籍表 Books：
+
++----------------+---------+
+| Column Name    | Type    |
++----------------+---------+
+| book_id        | int     |
+| name           | varchar |
+| available_from | date    |
++----------------+---------+
+book_id 是这个表的主键。
+
+订单表 Orders：
+
++----------------+---------+
+| Column Name    | Type    |
++----------------+---------+
+| order_id       | int     |
+| book_id        | int     |
+| quantity       | int     |
+| dispatch_date  | date    |
++----------------+---------+
+order_id 是这个表的主键。
+book_id  是 Books 表的外键。
+
+ 
+
+你需要写一段 SQL 命令，筛选出订单总量 少于10本 的 书籍 。
+
+注意：不考虑 上架（available from）距今 不满一个月 的书籍。并且 假设今天是 2019-06-23 。
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/unpopular-books
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+select
+  book_id,
+  name
+from Books b
+where
+  b.book_id not in (
+    select
+      book_id
+    from orders
+    where
+      dispatch_date between '2018-06-23'
+      and '2019-06-23'
+    group by
+      book_id
+    having
+      sum(quantity) >= 10
+  )
+  and b.available_from not between '2019-05-23'
+  and '2019-06-23'
