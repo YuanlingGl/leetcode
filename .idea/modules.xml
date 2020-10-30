@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/201908_leetcode/201908_leetcode.iml" filepath="$PROJECT_DIR$/201908_leetcode/201908_leetcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/201909_leetcode/201909_leetcode.iml" filepath="$PROJECT_DIR$/201909_leetcode/201909_leetcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/201910_leetcode/201910_leetcode.iml" filepath="$PROJECT_DIR$/201910_leetcode/201910_leetcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/202010_leetcode/202010_leetcode.iml" filepath="$PROJECT_DIR$/202010_leetcode/202010_leetcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/leetcode.iml" filepath="$PROJECT_DIR$/.idea/leetcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weekly_contest/weekly_contest.iml" filepath="$PROJECT_DIR$/weekly_contest/weekly_contest.iml" />
+    </modules>
+  </component>
+</project>
