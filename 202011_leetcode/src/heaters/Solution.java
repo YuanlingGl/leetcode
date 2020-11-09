@@ -1,7 +1,6 @@
 package heaters;
 
 import java.util.Arrays;
-import java.util.Map;
 
 /**
  * @author dd
