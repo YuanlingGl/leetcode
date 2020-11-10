@@ -5,7 +5,7 @@ package next_permutation;
  * @version 1.0
  * @date 2020/11/10
  */
-class Solution {
+public class Solution {
     public void nextPermutation(int[] nums) {
         int i = nums.length - 2;
         while (i >= 0 && nums[i] >= nums[i + 1]) {
