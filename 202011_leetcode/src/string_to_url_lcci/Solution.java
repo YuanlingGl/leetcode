@@ -32,6 +32,40 @@ class Solution {
         }
         return sb.toString();
     }
+
+    public String replaceSpaces1(String S, int length) {
+        return S.substring(0, length).replace(" ", "%20");
+    }
+
+    public String replaceSpaces2(String S, int length) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < length; i++) {
+            char ch = S.charAt(i);
+            if (ch == ' ') {
+                sb.append("%20");
+                continue;
+            }
+            sb.append(ch);
+        }
+        return sb.toString();
+    }
+
+    public String replaceSpaces3(String S, int length) {
+        char[] ch = new char[length * 3];
+        int index = 0;
+        for (int i = 0; i < length; i++) {
+            char c = S.charAt(i);
+            if (c == ' ') {
+                ch[index++] = '%';
+                ch[index++] = '2';
+                ch[index++] = '0';
+            } else {
+                ch[index] = c;
+                index++;
+            }
+        }
+        return new String(ch, 0, index);
+    }
 }
 
 class Demo {
