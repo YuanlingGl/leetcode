@@ -1,8 +1,8 @@
 # Stream
 * 创建流
 ***  
-    stream() − 为集合创建串行流。  
-    parallelStream() − 为集合创建并行流。
+    stream() - 为集合创建串行流。  
+    parallelStream() - 为集合创建并行流。
 ***
 * forEach
 ***

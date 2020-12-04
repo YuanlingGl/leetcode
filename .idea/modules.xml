@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/202010_leetcode/202010_leetcode.iml" filepath="$PROJECT_DIR$/202010_leetcode/202010_leetcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/202011_demo/202011_demo.iml" filepath="$PROJECT_DIR$/202011_demo/202011_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/202011_leetcode/202011_leetcode.iml" filepath="$PROJECT_DIR$/202011_leetcode/202011_leetcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/202012_leetcode/202012_leetcode.iml" filepath="$PROJECT_DIR$/202012_leetcode/202012_leetcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/leetcode.iml" filepath="$PROJECT_DIR$/.idea/leetcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/weekly_contest/weekly_contest.iml" filepath="$PROJECT_DIR$/weekly_contest/weekly_contest.iml" />
     </modules>
