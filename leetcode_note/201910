@@ -494,7 +494,7 @@ k = 8,
 --------------------
 20191024
 
-class Solution {
+class fair_Candy_Swap.Solution {
   public List<Integer> topKFrequent(int[] nums, int k) {
     // build hash map : character and how often it appears
     HashMap<Integer, Integer> count = new HashMap();
